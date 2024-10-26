@@ -1,0 +1,88 @@
+.meditation-page {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .meditation-page h1 {
+    font-size: 2em;
+    color: #009688;
+    margin-bottom: 20px;
+  }
+  
+  /* Category Buttons */
+  .category-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+    justify-content: center;
+  }
+  
+  .category-button {
+    background-color: #009688;
+    color: #FFF;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+  }
+  
+  .category-button:hover {
+    background-color: #00796B;
+  }
+  
+  /* Meditation Sections */
+  .meditation-section {
+    margin-top: 30px;
+    text-align: left;
+  }
+  
+  .meditation-section h2 {
+    font-size: 1.5em;
+    color: #009688;
+    margin-bottom: 15px;
+  }
+  
+  .meditation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .meditation-item {
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #FFFFFF;
+    border: 1px solid #E0E0E0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .meditation-item h3 {
+    margin: 0;
+    color: #37474F;
+  }
+  
+  .meditation-item p {
+    margin: 5px 0 0;
+    color: #606060;
+  }
+  
+  .meditation-item:hover {
+    background-color: #E0F7FA;
+    border-color: #009688;
+  }
+  
+  /* Video Player */
+  .video-player {
+    margin-top: 20px;
+  }
+  
+  .video-player iframe {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  

@@ -37,4 +37,14 @@
   .dashboard-option:hover {
     background-color: var(--button-hover); /* Slightly darker blue */
   }
+  .feature-link {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits color from parent */
+  }
+  
+  .feature-box h2,
+  .feature-box p {
+    margin: 0;
+    color: #37474F;
+  }
   
