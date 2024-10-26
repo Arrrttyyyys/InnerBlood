@@ -1,5 +1,5 @@
-/* Container styling for the homepage */
-.home-page {
+/* Overall container styling */
+.homePage {
   max-width: 800px;
   margin: 0 auto;
   padding: 40px 20px;
@@ -8,80 +8,90 @@
 }
 
 /* Hero Banner Styling */
-.hero-banner {
+.heroBanner {
   background-color: #009688;
   color: white;
-  padding: 40px 20px;
-  border-radius: 10px;
+  padding: 60px 20px;
+  border-radius: 12px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-.hero-banner h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+.heroBanner h1 {
+  font-size: 2.8em;
+  margin-bottom: 15px;
 }
 
-.hero-banner p {
+.heroBanner p {
   font-size: 1.2em;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }
 
-.hero-banner .cta-button {
+.heroBanner .ctaButton {
   background-color: #ffffff;
   color: #009688;
   border: none;
-  padding: 10px 20px;
+  padding: 12px 25px;
   font-size: 1em;
+  font-weight: bold;
   border-radius: 8px;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
-.hero-banner .cta-button:hover {
+.heroBanner .ctaButton:hover {
   background-color: #e0f2f1;
+  transform: scale(1.05);
 }
 
 /* About Section Styling */
-.about-section {
+.aboutSection {
   text-align: center;
   margin-bottom: 40px;
-}
-
-.about-section p {
   font-size: 1.1em;
   line-height: 1.6;
+  color: #606060;
 }
 
 /* Features Section Styling */
-.features-section {
-  margin-bottom: 40px;
-}
-
-.features-section h2 {
-  font-size: 1.8em;
-  color: #009688;
-  margin-bottom: 20px;
+.featuresSection {
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.features-grid {
+.featuresSection h2 {
+  font-size: 2em;
+  color: #009688;
+  margin-bottom: 25px;
+}
+
+.featuresGrid {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
 }
 
+/* Styling for each feature box */
 .feature {
-  background-color: #f0f4f8;
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #f7fafc;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+}
+
+.feature:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
 }
 
 .feature h3 {
-  font-size: 1.4em;
+  font-size: 1.5em;
   margin-bottom: 10px;
   color: #37474F;
+  font-weight: 600;
 }
 
 .feature p {
@@ -90,25 +100,25 @@
 }
 
 /* How It Works Section Styling */
-.how-it-works {
-  margin-bottom: 40px;
+.howItWorks {
+  margin-bottom: 50px;
   text-align: center;
 }
 
-.how-it-works h2 {
+.howItWorks h2 {
   font-size: 1.8em;
   color: #009688;
   margin-bottom: 20px;
 }
 
-.how-it-works ol {
+.howItWorks ol {
   list-style-type: decimal;
   margin: 0;
   padding: 0;
   text-align: left;
 }
 
-.how-it-works li {
+.howItWorks li {
   font-size: 1em;
   color: #37474F;
   margin-bottom: 10px;
@@ -123,16 +133,16 @@
   border-top: 1px solid #e0e0e0;
 }
 
-.footer .footer-links {
+.footer .footerLinks {
   margin-top: 10px;
 }
 
-.footer .footer-links a {
+.footer .footerLinks a {
   color: #009688;
   margin: 0 10px;
   text-decoration: none;
 }
 
-.footer .footer-links a:hover {
+.footer .footerLinks a:hover {
   text-decoration: underline;
 }
