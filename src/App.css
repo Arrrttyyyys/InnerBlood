@@ -1,38 +1,177 @@
-.App {
+/* Root Variables for Easy Theme Customization */
+:root {
+  --primary-color: #A7C7E7; /* Soft Blue */
+  --accent-color: #009688; /* Teal */
+  --background-color: #F0F4F8; /* Light Gray */
+  --text-color: #37474F; /* Dark Gray */
+  --button-hover: #81A3D0; /* Slightly Darker Blue */
+  --card-background: #FFFFFF; /* White */
+  --border-color: #B2DFDB; /* Light Green */
+}
+
+/* Global Styles */
+body {
+  background-color: var(--background-color);
+  font-family: 'Lato', sans-serif;
+  color: var(--text-color);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-color);
+  margin: 0;
+}
+
+p {
+  line-height: 1.6;
+  color: var(--text-color);
+}
+
+/* Navbar Styling */
+.navbar {
+  background-color: var(--accent-color);
+  padding: 10px 20px;
+  color: #FFF;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.navbar li {
+  margin: 0 15px;
+}
+
+.navbar a {
+  color: #FFF;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: var(--border-color); /* Light Green */
+}
+
+/* Buttons */
+button {
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--button-hover);
+}
+
+/* Form Elements */
+textarea, input {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Container Styling for Sections */
+.vent-container, .journal-container, .crisis-container {
+  background-color: var(--card-background);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.vent-container h1, .journal-container h1, .crisis-container h1 {
+  color: var(--accent-color);
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* Styling for Entries in the Journal */
+.journal-entries .entry {
+  background-color: var(--card-background);
+  border: 1px solid var(--border-color);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.journal-entries .entry p {
+  margin: 0;
+}
+
+/* Crisis Support Section */
+.crisis-container ul {
+  list-style: none;
+  padding: 0;
+}
+
+.crisis-container li {
+  background-color: var(--card-background);
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .navbar ul {
+    flex-direction: column;
+  }
+
+  .navbar li {
+    margin: 10px 0;
+  }
+
+  button {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .vent-container, .journal-container, .crisis-container {
+    margin: 10px;
+    padding: 15px;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.home-container {
+  text-align: center;
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: var(--card-background); /* White */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
 }
 
-.App-link {
-  color: #61dafb;
+.home-container h1 {
+  color: var(--accent-color); /* Teal */
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-container p {
+  color: var(--text-color); /* Dark Gray */
+  font-size: 18px;
+  line-height: 1.6;
 }
